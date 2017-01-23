@@ -1,0 +1,65 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+
+
+  <title>Photo Viewer</title>
+<script src="./bower_components/angular/angular.js"></script>
+<script src="app.js"></script>
+ 
+  <link rel="stylesheet" href="./bower_components/bootstrap/dist/css/bootstrap.css">
+ <link rel="stylesheet" href="main.css">
+
+</head>
+<body ng-app="photoViewer">
+<div class="container">
+  <div class="row">
+    <div class="col-md-6">
+      <h1>Photo Library App</h1>
+    </div>
+  </div>
+
+
+  <div class="row" >
+
+    <div class="col-md-6" ng-controller="photos">
+      <table >
+        <tr>
+          <th>Images</th>
+        </tr>
+        <tr ng-repeat="photo in images">
+          <td ng-click="clickHandler(photo)">{{ photo.title }}</td>
+        </tr>
+      </table>
+    </div>  
+
+
+    <div class="col-md-6" ng-controller="imageDisplay">
+      <figure>
+        <img src={{currentPhoto.url}} >
+        <figcaption>{{currentPhoto.title}} <span class="ranking">{{currentPhoto.rating}} out of 5</span></figcaption>
+        <select name="ngvalueselect" ng-model="currentPhoto.rating" ng-change="changeRating()">
+          <option value="1">Rating: 1</option>
+          <option value="2">Rating: 2</option>
+          <option value="3">Rating: 3</option>
+          <option value="4">Rating: 4</option>
+          <option value="5">Rating: 5</option>
+        </select>
+      </figure>
+    </div>  
+
+
+  </div>  
+
+
+</div>
+
+
+
+
+
+<script src="./bower_components/jquery/dist/jquery.js"></script>
+<script src="./bower_components/bootstrap/dist/js/bootstrap.js"></script>
+</body>
+</html>

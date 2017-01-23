@@ -1,0 +1,21 @@
+{
+  "name": "photoviewer",
+  "description": "",
+  "main": "server.js",
+  "authors": [
+    "Alison Reed <alison.michelle.reed@gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "angular": "^1.6.1"
+  }
+}

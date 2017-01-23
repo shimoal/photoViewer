@@ -1,0 +1,47 @@
+body {
+  background-color: cyan;
+}
+
+h1 {
+  margin-bottom: 50px;
+  padding: 20px;
+}
+
+table {
+  border-collapse: collapse;
+}
+table, td, th {
+  border: 1px solid black;
+}
+
+th, td {
+  padding: 5px;
+}
+th {
+  background-color: lightgray;
+  text-align: center;
+}
+
+td {
+  height: 40px;
+  width: 400px;
+  background-color: white;
+}
+
+figure {
+  text-align: center;
+}
+
+img {
+  height: 350px;
+  width: auto;
+}
+
+figcaption {
+  margin: 20px 0;
+  text-align: center; 
+}
+
+.ranking{
+  padding: 20px;
+}
